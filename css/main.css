@@ -1,0 +1,1555 @@
+@charset "UTF-8";
+
+/************************************************
+ GLOBAL STYLES
+ 
+ 	TEMPLATES
+   
+  	TemplateOne: 	HOME
+	---------------------------------------------
+	TemplateTwo: 	ABOUT | LEGISLATORS | CHAMBERCONNECTS | COMMITTIEES
+	---------------------------------------------
+	TemplateThree:	SPONSORSHIP | RFP
+	---------------------------------------------								
+	TemplateFour:	BOARD | PARTNERSHIPS
+	---------------------------------------------
+	TemplateFive:	NEWSLETTEER | PRESS RELEASE
+	---------------------------------------------
+	TemplateSix:	STAFF
+	---------------------------------------------
+	TemplateSeven:	BENEFITS | COMMUNITIES
+	---------------------------------------------
+	TemplateEight:	CONTACT
+	
+	=============================================
+	
+	COLORS
+	
+	#AAAAAA : LIGHT GRAY 
+	#46423A : MEDIUM GRAY
+	#1A1F26 : DARK GRAY
+	#36626D : TEAL
+	#00387D : DARK BLUE
+	#8FAED6 : LIGHT BLUE
+	#E7CC52 : YELLOW	
+	
+	=============================================
+	
+	GRID
+	
+	.WRAPPER :
+	 - CONTROLS CONTENT WIDTH
+	 - AUTO CENTERED
+	
+	.ROW :
+	 - SPANS CONTAINER
+	 - NO MARGIN OR PADDING
+	 - WRAPS BLOCKS
+	
+	.THREE-FOURTH : 
+	 - 75% WIDE 
+	 - 15PX VERTICAL PADDING 
+	 - 30PX RIGHT PADDING
+	 - WRAPS BLOCKS
+	 - FLOAT LEFT
+					
+	.ONE-FOURTH :   
+	 - 25% WIDE
+	 - 15PX VERTICAL PADDING
+	 - 30PX RIGHT PADDING
+	 - WRAPS ELEMENTS
+	 - FLOAT LEFT
+	
+	.FULL:	
+	 - 100% WIDE
+	 - 10PX VERTICAL PADDING
+	 - 30PX HORIZONTAL PADDING
+	 - BLOCK OR WRAPS BLOCKS
+	 - FLOAT LEFT
+	
+	.HALF	
+	 - 50% WIDE
+	 - 10PX VERTICAL PADDING
+	 - 30PX HORIZONTAL PADDING
+	 - BLOCK
+	 - FLOAT LEFT
+			
+	.THIRD	
+	 - 33.33% WIDE
+	 - 10PX VERTICAL PADDING
+	 - 30PX HORIZONTAL PADDING
+	 - BLOCK
+	 - FLOAT LEFT
+	
+	.FOURTH	
+	 - 25% WIDE
+	 - 10PX VERTICAL PADDING
+	 - 30PX HORIZONTAL PADDING
+	 - BLOCK
+	 - FLOAT LEFT
+   
+*************************************************/
+
+
+
+/* Grid
+----------------------------------------------- */
+
+header, .wrapper, .templateOne div.wrapper + section{
+	width:80%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.row{display:block;}
+.three-fourth, .one-fourth, .half, .third, .fourth{ float: left;}
+.three-fourth{ width:75%; padding: 15px 30px 15px 0;}
+.one-fourth{ padding:15px 30px 15px 0px;}
+.full, .half, .third, .fourth{ padding: 10px 30px;}
+.half{ width:50%;}
+.third{ width:33.333%;}
+.one-fourth, .fourth{ width:25%;}
+
+
+
+/* Type
+----------------------------------------------- */
+
+
+@font-face {
+font-family: 'Utopia';
+font-style:normal;
+font-weight:normal;
+src: url("../fonts/Utopia-Regular.eot");
+src: url("../fonts/Utopia-Regular.eot?#iefix") format("embedded-opentype"),
+url("../fonts/Utopia-Regular.woff") format("woff"),
+url("../fonts/Utopia-Regular.ttf") format("truetype"),
+url("../fonts/Utopia-Regular.svg#Utopia-Regular") format("svg"); }
+
+@font-face {
+font-family: 'Utopia';
+font-style:italic;
+font-weight:normal;
+src: url("../fonts/Utopia-Italic.eot");
+src: url("../fonts/Utopia-Italic.eot?#iefix") format("embedded-opentype"),
+url("../fonts/Utopia-Italic.woff") format("woff"),
+url("../fonts/Utopia-Italic.ttf") format("truetype"),
+url("../fonts/Utopia-Italic.svg#Utopia-Italic") format("svg"); }
+
+@font-face {
+font-family: 'Vectora';
+font-style:normal;
+font-weight:normal;
+src: url("../fonts/VectoraLTStd-Roman.eot");
+src: url("../fonts/VectoraLTStd-Roman.eot?#iefix") format("embedded-opentype"),
+url("../fonts/VectoraLTStd-Roman.woff") format("woff"),
+url("../fonts/VectoraLTStd-Roman.ttf") format("truetype"),
+url("../fonts/VectoraLTStd-Roman.svg#VectoraLTStd-Roman") format("svg"); }
+
+@font-face {
+font-family: 'Vectora';
+font-style:italic;
+font-weight:normal;
+src: url("../fonts/VectoraLTStd-Italic.eot");
+src: url("../fonts/VectoraLTStd-Italic.eot?#iefix") format("embedded-opentype"),
+url("../fonts/VectoraLTStd-Italic.woff") format("woff"),
+url("../fonts/VectoraLTStd-Italic.ttf") format("truetype"),
+url("../fonts/VectoraLTStd-Italic.svg#VectoraLTStd-Italic") format("svg"); }
+
+@font-face {
+font-family: 'Vectora';
+font-style:normal;
+font-weight:light;
+src: url("../fonts/VectoraLTStd-Light.eot");
+src: url("../fonts/VectoraLTStd-Light.eot?#iefix") format("embedded-opentype"),
+url("../fonts/VectoraLTStd-Light.woff") format("woff"),
+url("../fonts/VectoraLTStd-Light.ttf") format("truetype"),
+url("../fonts/VectoraLTStd-Light.svg#VectoraLTStd-Light") format("svg"); }
+
+@font-face {
+font-family: 'Vectora';
+font-style:normal;
+font-weight:bold;
+src: url("../fonts/VectoraLTStd-Bold.eot");
+src: url("../fonts/VectoraLTStd-Bold.eot?#iefix") format("embedded-opentype"),
+url("../fonts/VectoraLTStd-Bold.woff") format("woff"),
+url("../fonts/VectoraLTStd-Bold.ttf") format("truetype"),
+url("../fonts/VectoraLTStd-Bold.svg#VectoraLTStd-Bold") format("svg"); }
+
+@font-face {
+font-family: 'Vectora';
+font-style:normal;
+font-weight:bold;
+src: url("../fonts/VectoraLTStd-Bold.eot");
+src: url("../fonts/VectoraLTStd-Bold.eot?#iefix") format("embedded-opentype"),
+url("../fonts/VectoraLTStd-Bold.woff") format("woff"),
+url("../fonts/VectoraLTStd-Bold.ttf") format("truetype"),
+url("../fonts/VectoraLTStd-Bold.svg#VectoraLTStd-Bold") format("svg"); }
+
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?qscs67');
+	src:url('../fonts/icomoon.eot?#iefixqscs67') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?qscs67') format('woff'),
+		url('../fonts/icomoon.ttf?qscs67') format('truetype'),
+		url('../fonts/icomoon.svg?qscs67#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+	content: "\e601";
+}
+.icon-file:before {
+	content: "\e602";
+}
+.icon-phone:before {
+	content: "\e603";
+}
+.icon-envelope:before {
+	content: "\e604";
+}
+.icon-calendar:before {
+	content: "\e605";
+}
+.icon-bubbles:before {
+	content: "\e60a";
+}
+.icon-user:before {
+	content: "\e60b";
+}
+.icon-menu:before {
+	content: "\e60c";
+}
+.icon-earth:before {
+	content: "\e606";
+}
+.icon-facebook:before {
+	content: "\e607";
+}
+.icon-instagram:before {
+	content: "\e608";
+}
+.icon-twitter:before {
+	content: "\e600";
+}
+.icon-linkedin:before {
+	content: "\e609";
+}
+
+
+
+
+h1, h2, h3, h4, h5, h6 { 
+	font-family: 'Vectora', 'Vectora W01 55 Roman', Helvetica, sans-serif;
+	font-weight: bold; 
+	font-style: normal; 
+	margin-top: 0;
+}
+
+body { 
+	font: 16px/22px 'Vectora', 'Vectora W01 55 Roman', Helvetica, sans-serif;
+	background: #eaeaea url('../img/design/gray-bg.png');
+}
+
+p { font-family:  'Utopia', 'Utopia W01 Regular', 'Times New Roman', serif; }
+
+.wrapper{ background:#fff; }
+
+a, 
+a:visited {
+	color: #46423A;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #aaa;
+}
+
+h1 { font-size: 21.328px; line-height: 29.326px; margin-bottom: 0px }
+h2 { font-size: 37.897px; line-height: 39.326px; margin-bottom: 12px }
+h3 { font-size: 16px; line-height: 22px; margin-bottom: 0px }
+h4 { font-size: 21.328px; line-height: 29.326px; margin-bottom: 8px }
+h5 { font-size: 12.003px; line-height: 21.362px; margin-bottom: 20px }
+h6 { font-size: 10px; line-height: 1; margin-bottom: 20px }
+
+
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img { margin: 0;}
+
+p, strong	{ margin: 0 0 25px;	padding-bottom: 5px; }
+
+strong      { font-weight: bold; }
+em,dfn      { font-style: italic; }
+dfn         { font-weight: bold; }
+sup, sub    { line-height: 0; }
+
+abbr, 
+acronym     { border-bottom: 1px dotted #666; }
+del         { color:#666; }
+
+
+a img, a:visited img, a:hover img { border: none }
+
+input, textarea{ font: 14px/22px 'Vectora', 'Vectora W01 55 Roman', Helvetica, sans-serif;}
+
+
+
+
+/* Positions
+----------------------------------------------- */
+header, .wrapper, footer.main, .half, .third, .fourth{
+	position:relative;
+}
+
+
+/* Header
+----------------------------------------------- */
+
+header{padding:15px 0px; }
+		
+h1.logo{
+		margin: 0px;
+		text-indent: 1000%;
+		white-space: nowrap;
+		background: url('../img/wschamber-logo.png');
+		width:250px;
+		height:81px;
+		overflow:hidden;
+		background-repeat:no-repeat;
+		background-size:100%;
+		}
+
+
+/* Desktop Main Nav
+----------------------------------------------- */
+nav.sub{position:absolute; top:25px; right:0px;}
+nav.sub ul.social-media, nav.sub ul.search{float:left; padding-left:10px;}
+nav.sub ul.social-media li, nav.sub ul.search li {display:inline-block; float:left; padding-left:3px;}
+nav.sub ul.search li{font-size:14px; padding-left:20px;}
+nav.sub ul.search li input[type="search"] {margin-top:-7px; }
+nav.sub ul.search li input[type="search" i] {padding:30px; }
+
+nav.main { position: absolute; right: 0; top: 70px; font-weight:bold;}
+
+
+nav.main ul {text-align:center; font-size:14px;}
+nav.main ul li {float:left;display:inline; padding-left: 15px;}
+nav.main ul li a {display:block;padding:5px 2px;color:#444;}
+nav.main ul li ul {position:absolute;width:230px;background:#eaeaea url('../img/design/gray-bg.png'); margin-left:-25px;}
+nav.main ul li ul li {width:230px; text-align:left;}
+nav.main ul li ul li a {display:block;padding:15px 10px;color:#444;}
+nav.main ul li ul li:hover a {color:#aaa;}
+nav.main ul li ul.fallback {display:none;}
+nav.main ul li:hover ul.fallback {display:block;}
+nav.main ul li a.button{padding:5px 15px;}
+
+
+
+/* Mobile Main Nav
+----------------------------------------------- */
+
+
+/* ------------------------------------------
+  NECESSARY STYLES FOR RESPONSIVE NAV 
+  http://responsive-nav.com/
+--------------------------------------------- */
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+
+/*Custom Styles*/
+
+/*Grid*/
+footer.mobile{
+	position:fixed;
+	width:100%;
+	bottom:0px;
+	}
+	
+footer.mobile .half{
+	width:50%;
+	padding:5px 0px;
+	}
+		
+/*Fonts*/		
+footer.mobile,
+footer.mobile a{
+	background-image:none;
+	font: 12px/22px 'Vectora', 'Vectora W01 55 Roman', Helvetica, sans-serif;
+	}
+		
+footer.mobile address a, 
+footer.mobile .row:nth-child(1) a{
+	color:#fff;
+	}
+		
+footer.mobile ul#nav li a{
+	font-weight:bold;
+}
+
+footer.mobile ul#nav li ul li a{
+	padding-left:5px;
+	font-weight:normal;
+}
+
+footer.mobile ul.mobile-nav li:before{
+	font-size:36px;
+	color:#36626D;
+	display:block;
+}
+
+
+/*Backgrounds*/
+
+footer.mobile .row.directory,
+footer.mobile .row.address{
+	background-color:#36626D;
+	text-align:center;
+	color:#fff;
+}
+		
+footer.mobile .row.directory .half:nth-child(2){
+	background-color:#00387D;
+}
+		
+footer.mobile .row.navigation {
+	background-color: #fff;
+}
+		
+footer.mobile ul.mobile-nav{
+	background-color: #fff;
+	border-top:1px solid rgba(134, 134, 134, 0.25);
+}
+	
+		
+
+/*Alignment*/
+footer.mobile ul#nav li{
+	padding:20px 0px;
+	border-bottom:  1px solid rgba(134, 134, 134, 0.15);
+}
+
+footer.mobile ul#nav li ul li{
+	padding:0px;
+	border-bottom: none;
+}
+
+
+
+		
+footer.mobile ul#nav li:last-of-type{
+	border:none;
+}
+		
+footer.mobile ul.mobile-nav li{
+	display:block;
+	float:left;
+	width:20%;
+	padding:1px;
+	text-align:center;
+}
+		
+footer.mobile ul.mobile-nav li{
+	padding-top:10px;
+}
+		
+		
+
+
+/* Main Content
+----------------------------------------------- */
+
+figure + .wrapper, .wrapper.main{
+	padding:0px 0px 200px;
+	margin-bottom:-100px; /*pushes div below footer*/
+}
+
+/*headings*/
+h1 span {
+    background: url("../img/design/gold-bg.png") repeat scroll 0 0 #e7cc52;
+    color: #fff;
+    left: 0;
+    padding: 14px 31px;
+    position: absolute;
+    top: -57px;
+}
+
+h2 {color: #46423a;}
+
+strong {
+    font-size: 28.43px;
+    line-height: 39.092px;
+	color:#aaa;
+	font-weight:normal;
+}
+
+h5{ font-weight:normal; }
+
+
+/*styled lists*/
+ul.emphasis{ font-style: italic; margin:0 0 25px; color:#aaa;}
+ul.emphasis li, nav.secondary ul li{ border-top: 1px solid #d8d8d8; padding: 15px 0px;}
+ul.emphasis li:first-of-type{ border-top: none;}
+
+
+
+
+/* Side Nav
+----------------------------------------------- */
+aside h4{
+	font-weight:bold;
+	color: #E7CC52;
+	text-transform:uppercase;
+}
+
+aside .styleTwo{
+	margin:0 auto 5px;
+	width: 100%;
+	display: block;
+	text-align:center
+	}
+
+nav.secondary ul{ font-weight:bold;}
+
+
+
+/* Footer.main & Contact Page Elements
+----------------------------------------------- */
+footer.main .wrapper{ background: transparent; padding-bottom:15px;}
+
+footer.main {
+  background:url(../img/design/footer.svg);
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position:top right;
+  background-size:100%;
+  padding-top:85px;
+  z-index:1000;
+  
+}
+.no-svg footer.main{ background-image: url(../img/design/footer.main.png);}
+
+/*fonts*/
+footer.main cite,  
+footer.main ul li,  
+footer.main ul li a, 
+footer.main p, 
+footer.main span{ 
+	color:#fff;
+}
+footer.main p{ margin-bottom:5px;}
+footer.main span{font-size:12px;}
+
+
+/*form*/
+
+input, footer.main textarea {
+    padding: 5px;
+	width:100%;
+	margin-bottom: 1%;
+}
+
+
+/*quote*/
+
+footer.main blockquote{ 
+	color:#8faed6; 
+	line-height: 29.326px; }
+
+footer.main cite{ display: block;}
+	
+
+/*footer.main address info also used on contact page */
+footer.main ul.contact li:nth-child(1):before, 
+footer.main ul.contact li:nth-child(2):before, 
+footer.main ul.contact li:nth-child(3):before, 
+footer.main ul.contact li:nth-child(4):before, 
+.contact-side ul li:nth-child(1):before,
+.contact-side ul li:nth-child(2):before,
+.contact-side ul li:nth-child(3):before,
+.contact-side ul li:nth-child(4):before{
+	font-family:icomoon;
+	color: #e7cc52;
+	padding-right:5px;
+	}
+
+
+footer.main ul.contact li:nth-child(1):before, 
+.contact-side ul li:nth-child(1):before{ 
+	content:'\e601'; /*house*/
+}
+
+footer.main ul.contact li:nth-child(2):before,
+.contact-side ul li:nth-child(2):before{ 
+	content:'\e603'; /*phone*/
+}
+
+footer.main ul.contact li:nth-child(3):before,
+.contact-side ul li:nth-child(3):before{ 
+	content:'\e602'; /*file*/
+}
+
+footer.main ul.contact li:nth-child(4):before,
+.contact-side ul li:nth-child(4):before{ 
+	content:'\e604'; /*envelope*/
+}
+
+/*indents second row text to fit icons*/
+
+footer.main ul.contact li, 
+.templateOne .wrapper section ul li , 
+.contact-side ul li{
+    list-style: none;
+    counter-increment: foo;
+    display: table-row;
+}
+
+footer.main ul.contact li:before, 
+.templateOne .wrapper section ul li:before, 
+.contact-side ul li:before {
+    content: counter(foo) ".";
+    display: table-cell;
+    text-align: right;
+    padding-right: .1em;
+}
+
+/*copyright*/
+footer.main .full{
+	text-align: center;
+	background-color:#1a1f26;
+	
+}
+
+
+
+/* Styles
+----------------------------------------------- */
+
+/*buttons*/
+
+a.styleOne,
+a.button.styleOne,  
+a.styleTwo,
+a.styleThree, 
+button, 
+input[type="submit"]{
+	border:0px;
+	background-color:#36626d;
+	border-radius: 10px;
+	padding:6px 10px;
+	color:#fff;
+	text-align:center;
+	}
+
+/*blue button*/
+a.styleOne, a.button.styleOne:hover {
+    display: inline-block;
+    font-weight: bold;
+}
+
+/*dark gray button*/
+a.styleTwo, button.styleTwo{
+	background-color: #46423a;
+	border-radius: 0;
+	text-transform: uppercase;
+	color:#fff;
+	font-size:12px;
+}
+
+/*yellow button*/
+a.styleThree, button.styleThree, input[type="submit"]{
+	background-color: #e7cc52;
+	color:#46423a;
+	text-transform: uppercase;
+	margin: 2px 0;
+    padding: 2px 17px;
+}
+
+input[type="submit"]{ width:100px;}
+
+/*button hover states*/
+button:hover, a.styleOne:hover, a.button.styleOne:hover, a.styleThree:hover, input[type="submit"]:hover{
+	background-color:#aaa;
+	min-height:5px;
+}
+
+a.styleTwo:hover{
+	background-color: #1a1f26;
+}
+
+
+/* Hide Elements
+----------------------------------------------- */
+footer.mobile{display:none;}
+
+
+	
+
+/****************
+TEMPLATE SPECIFIC
+*****************/
+
+/* Template One
+----------------------------------------------- */
+/*headings*/
+.templateOne h2,  .templateOne div.wrapper + section h2{
+		text-align: center;
+		color:#aaa;
+		font-weight:normal;
+		font-size: 21.328px;
+		border-bottom:  1px solid rgba(134, 134, 134, 0.15);
+   	 	line-height: 29.326px;
+		padding:5px 0 10px;
+		}
+		
+.templateOne div.wrapper + section h2 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.53);
+	color:#fff;
+}
+
+
+
+
+/*padding*/
+.templateOne .events .row{ padding-bottom:20px;}
+
+/*push footer.main down*/
+.templateOne .socialFeed{ padding-bottom:70px;}
+	
+
+/*WHATS HAPPENING*/
+
+/*headings*/
+.templateOne .events h6, 
+.templateOne .events a {
+    display: inline;
+    margin-right: 20px;
+}
+/*event lists*/
+.templateOne .events ul{margin:10px 0px;}
+.templateOne .events ul li {
+    margin: 0;
+    padding:0;
+	line-height:1.5;
+	color: #aaa;
+}
+
+/*event icons*/
+.templateOne .events  ul li:nth-child(1):before, 
+.templateOne .events  ul li:nth-child(2):before{ 
+	padding-right:5px;
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	}
+.templateOne section.events ul li:nth-child(1):before{ content: "\e606"} /*globe*/
+.templateOne section.events ul li:nth-child(2):before{ content: "\e605"} /*calendar*/
+
+
+/* welcome new members */
+.templateOne .newMembers{
+		 	padding: 0px 25px 15px;
+			background:#e7cc52 url('../img/design/gold-bg.png') repeat;
+}
+		
+.templateOne .newMembers .fourth{
+			width:23%;
+			margin:1%;
+			background-color:#fff;
+			min-height:140px;
+			padding:20px;
+			margin-bottom:30px;
+		}
+
+/*buttons*/
+.templateOne .links {
+	width:415px;
+	margin: 0 auto;
+}
+
+.templateOne .links .styleTwo {
+    display: inline-block;
+    text-align: center;
+    width: 205px;
+}
+
+
+/* social media news */
+span.social + div p {
+    display: block;
+    padding: 60px 0 0;
+}
+
+/*underlined links links*/
+.templateOne .events a, .templateOne .fourth a, .templateOne .socialFeed a {
+    font-size: 12.003px;
+    line-height: 1.5;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+/*push under footer*/
+.templateOne .newMembers + .wrapper{
+    padding-bottom: 50px;
+	margin-bottom:-100px;
+}
+
+
+
+/* Template Two
+----------------------------------------------- */
+
+
+/* Template Three
+----------------------------------------------- */
+
+
+/* Template Four & Five
+----------------------------------------------- */
+
+.templateFour .row .third ul{
+	font-family:  'Utopia', 'Utopia W01 Regular', 'Times New Roman', serif; ;
+}
+
+/*crosshatch*/
+
+.templateFour .row .third, 
+.templateFive .row .third{
+	border-right:1px solid rgba(201,201,201, .50);
+	border-bottom:1px solid rgba(201,201,201, .50);
+	padding:10px;
+}
+
+.templateFour .row .third:last-of-type, 
+.templateFive .row .third:last-of-type{
+	border-right:none;
+	padding-left:11px;
+}
+
+.templateFour .row:last-of-type .third, 
+.templateFive .row:last-of-type .third{
+	border-bottom:none;
+}
+
+
+.templateFour .row .third:only-of-type, 
+.templateFive .row .third:only-of-type{
+	border-right:1px solid rgba(201,201,201, .50);
+}
+
+/* Flip/Hover Template */
+
+.flip{	
+	position:relative;
+	overflow:hidden;
+}
+
+.flip img{
+	width:100%;
+	display:inline-block;
+	vertical-align: top;
+}
+
+.flip .hidden{
+	width:100%;
+	z-index:5;
+	position:relative;
+	top:0px;
+	display:inline-block;
+}
+
+.flip .visible{
+	position:absolute;
+	height:100%;
+	width:100%;
+	top:0px;
+	background-color:#fff;
+	z-index:10;
+	opacity: 1;
+   	transition: opacity .25s ease-in-out;
+   	-moz-transition: opacity .25s ease-in-out;
+   	-webkit-transition: opacity .25s ease-in-out;
+	padding:10px;
+}
+
+.flip .visible:hover{
+	opacity:0;
+	filter: alpha(opacity=0); /* For IE8 and earlier */
+}
+
+
+
+/* Template Five
+----------------------------------------------- */
+
+
+.templateFive .full > h3, .templateFive .full h3 + ul {
+    float: left;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.templateFive .full h3 + ul li{
+	display:inline-block;
+	float:left;
+	margin:0px 4px;
+}
+	
+.templateFive .full h3 + ul li time{
+	padding-right:5px;
+}
+	
+	
+.templateFive .full h3 + ul li:after{
+	content: " //";
+}
+
+.templateFive .full h3 + ul li:last-of-type:after{
+	content:" ";
+}
+
+
+
+/* Template Six
+----------------------------------------------- */
+.templateSix section{
+	padding-left:30px;
+		}
+.templateSix .three-fourth .third{
+	padding:10px 0px;
+		}
+.templateSix .three-fourth .third img{
+	margin-bottom:5px;
+}
+
+.templateSix .contact-info{
+	background-color:#00387D;
+	padding:20px;
+	margin-bottom:5px;
+   
+}
+
+.templateSix ul.contact, 
+.templateSix ul.contact a, 
+.templateSix ul.links, 
+.templateSix ul.links a{
+	color:#fff;
+}
+
+.templateSix ul.links{
+	padding:20px 0px;;
+}
+
+
+.templateSix ul.contact li:nth-child(1):before, 
+.templateSix ul.contact li:nth-child(2):before{
+	font-family:icomoon;
+	padding-right:5px;
+}
+.templateSix ul.contact li:nth-child(1):before{
+	content: "\e604"; /*envelope*/
+}
+
+.templateSix ul.contact li:nth-child(2):before{
+	content: "\e603"; /*phone*/
+}
+
+.templateSix ul.links li{
+	display:inline;
+	float:left;
+	padding-right:3px;
+}
+		
+		
+/* Template Seven
+----------------------------------------------- */
+.templateSeven h3{
+	margin-top:10px;
+}
+.templateSeven section .full{ border:30px solid;}
+
+.templateSeven section .full a{
+    font-size: 12.003px;
+    line-height: 1.5;
+	text-decoration:underline;
+	font-weight:bold;
+	padding-right:15px;
+}
+
+/*also used on contact form */
+.templateSeven section .full:nth-child(3n+1), .templateEight .wrapper.main{ 
+		border-color:#36626D;
+		border-style: solid; 
+		border-width: 30px; 
+		-moz-border-image: url('../img/design/teal-bg.png') 15 repeat; 
+		-webkit-border-image: url('../img/design/teal-bg.png') 15 repeat; 
+		-o-border-image: url('../img/design/teal-bg.png') 15 repeat; 
+		border-image: url('../img/design/teal-bg.png') 15 repeat;
+	}
+.templateSeven section .full:nth-child(3n+2) {
+		  border-color:#00387D;
+		  border-style: solid; 
+		  border-width: 30px; 
+		  -moz-border-image: url('../img/design/darkblue-bg.png') 22 repeat; 
+		  -webkit-border-image: url('../img/design/darkblue-bg.png') 22 repeat; 
+		  -o-border-image: url('../img/design/darkblue-bg.png') 22 repeat; 
+		  border-image: url('../img/design/darkblue-bg.png') 22 repeat;
+		}
+.templateSeven section .full:nth-child(3n+3) {
+		  border-color:#E7CC52;
+		  border-style: solid; 
+		  border-width: 30px; 
+		  -moz-border-image: url('../img/design/gold-bg.png') 22 repeat; 
+		  -webkit-border-image: url('../img/design/gold-bg.png') 22 repeat; 
+		  -o-border-image: url('../img/design/gold-bg.png') 22 repeat; 
+		  border-image: url('../img/design/gold-bg.png') 22 repeat;
+		}
+
+
+/* Template Eight
+----------------------------------------------- */
+.templateEight .wrapper.main {z-index:10000;}
+.templateEight .wrapper.main input{width:49.5%;  float:left; margin-right:.5%; margin-bottom:1%; border:none;}
+.templateEight .wrapper.main textarea{width:99.5%; border:none;}
+
+.templateEight .wrapper.main {
+	 background: #eaeaea url('../img/design/gray-bg.png');
+	 padding:20px;
+	margin-bottom:100px;
+ }
+ 
+.templateEight .fourth{
+	padding:0px;
+}
+
+.contact-side {
+    background-color: #fff;
+    font-size: 14px;
+    margin-right: -20px;
+    margin-top: -20px;
+    padding: 20px;
+}
+
+
+
+
+@media all and (max-width: 1200px) {
+	
+/* Grid
+----------------------------------------------- */
+header, .wrapper, .templateOne div.wrapper + section{ width:97%; }
+
+/* Header
+----------------------------------------------- */
+nav.main ul {text-align:center; font-size:12px;}
+
+
+/* Type
+----------------------------------------------- */
+/* Desktop Main Nav
+----------------------------------------------- */
+/* Mobile Main Nav
+----------------------------------------------- */
+/* Main Content
+----------------------------------------------- */
+/* Side Nav
+----------------------------------------------- */
+/* Footer.main & Contact Page Elements
+----------------------------------------------- */
+/* Styles
+----------------------------------------------- */
+/* Hide Elements
+----------------------------------------------- */
+/* Show Elements
+----------------------------------------------- */
+/* Template One
+----------------------------------------------- */
+/* Template Two
+----------------------------------------------- */
+/* Template Three
+----------------------------------------------- */
+/* Template Four
+----------------------------------------------- */
+/* Template Five
+----------------------------------------------- */
+/* Template Six
+----------------------------------------------- */
+/* Template Seven
+----------------------------------------------- */
+/* Template Eight
+----------------------------------------------- */	
+
+}
+
+@media all and (max-width: 1000px) {
+	
+/* TemplateEight
+----------------------------------------------- */
+.templateEight .fourth{display:none;}
+.templateEight .three-fourth{width:100%;}
+
+
+
+/* Grid
+----------------------------------------------- */
+/* Type
+----------------------------------------------- */
+/* Header
+----------------------------------------------- */
+/* Desktop Main Nav
+----------------------------------------------- */
+/* Mobile Main Nav
+----------------------------------------------- */
+/* Main Content
+----------------------------------------------- */
+/* Side Nav
+----------------------------------------------- */
+/* Footer.main & Contact Page Elements
+----------------------------------------------- */
+/* Styles
+----------------------------------------------- */
+/* Hide Elements
+----------------------------------------------- */
+/* Show Elements
+----------------------------------------------- */
+/* Template One
+----------------------------------------------- */
+/* Template Two
+----------------------------------------------- */
+/* Template Three
+----------------------------------------------- */
+/* Template Four
+----------------------------------------------- */
+/* Template Five
+----------------------------------------------- */
+/* Template Six
+----------------------------------------------- */
+/* Template Seven
+----------------------------------------------- */
+	
+}
+
+@media all and (max-width: 905px) {
+	
+/* Header
+----------------------------------------------- */
+h1.logo{width:175px;}
+nav.main ul li{padding-left:12px;}
+
+/* Footer.main 
+----------------------------------------------- */
+footer.main {
+    font-size: 12px;
+    padding-top: 55px;
+}
+
+
+
+/* Grid
+----------------------------------------------- */
+/* Type
+----------------------------------------------- */
+/* Desktop Main Nav
+----------------------------------------------- */
+/* Mobile Main Nav
+----------------------------------------------- */
+/* Main Content
+----------------------------------------------- */
+/* Side Nav
+----------------------------------------------- */
+/* Styles
+----------------------------------------------- */
+/* Hide Elements
+----------------------------------------------- */
+/* Show Elements
+----------------------------------------------- */
+/* Template One
+----------------------------------------------- */
+/* Template Two
+----------------------------------------------- */
+/* Template Three
+----------------------------------------------- */
+/* Template Four
+----------------------------------------------- */
+/* Template Five
+----------------------------------------------- */
+/* Template Six
+----------------------------------------------- */
+/* Template Seven
+----------------------------------------------- */
+/* Template Eight
+----------------------------------------------- */
+
+
+
+@media all and (max-width: 750px) {
+
+/* Grid
+----------------------------------------------- */
+header, .wrapper{
+	width:100%;
+	padding:15px;
+}
+
+.three-fourth, .one-fourth{ width:100%; padding: 15px; }
+.full, .half, .third, .fourth{ padding: 10px; }
+.wrapper.main .half, .wrapper.main .third{ width:50%; padding: 15px; }
+
+fourth, .templateOne div.wrapper + section .fourth, .templateOne div.wrapper + section { width:100%; }
+
+
+
+/* Header
+----------------------------------------------- */
+h1.logo{ margin:0px auto; width:300px; height:105px; }
+h1 span {font-size: 13px; padding: 6px 26px; top: -40px; width: 100%;}
+
+
+nav.sub{position:relative; width:100%; padding-bottom:20px;}
+nav.sub ul li{width:50%;}
+nav.sub ul.search li{padding-left: 4px;}
+nav.sub ul.search {float: none; padding-left: 0;}
+nav.sub ul.search li:nth-child(2){ background-color:#36626d; text-align:center; padding:8px; margin-top:-7px;}
+nav.sub ul.search a{font-size:14px; text-align:center;  color:#fff; padding:0px;}
+
+
+
+/* Main Content
+----------------------------------------------- */
+h2 {font-size: 32.897px;}
+.wrapper.main{margin-bottom:0px;}
+strong { font-size: 25.43px; line-height: 37.092px;}
+
+
+
+/* Hide Elements
+----------------------------------------------- */
+footer.main, 
+nav.main, 
+nav.sub ul.social-media,
+nav.sub ul.search li:first-of-type,
+.templateOne .wrapper section:first-of-type a{
+	display:none;
+}
+
+
+/* Show Elements
+----------------------------------------------- */
+footer.mobile{display:block; z-index:99999;}
+
+
+
+/* TemplateOne
+----------------------------------------------- */
+/*events*/
+.templateOne .wrapper section ul li:nth-child(1){font-weight:bold;}
+.templateOne h3{font-weight:normal; font-size:14px;}
+.templateOne .row .third{ border-bottom: 1px solid rgba(134, 134, 134, 0.15); padding-bottom:15px; padding-top:15px;}
+.templateOne .wrapper section ul{margin-top:0px;}
+.templateOne .wrapper section ul li{color:#1a1f26;}
+.templateOne .wrapper section ul li:nth-child(1):before,
+.templateOne .wrapper section ul li:nth-child(2):before{
+	content:'';
+	padding:0px;
+}
+
+/*new members*/
+.templateOne div.wrapper + section .fourth{margin:2px 0px;}
+.templateOne .links, .templateOne .links .styleTwo{width:100%;}
+.templateOne .links .styleTwo{margin:2px 0px;}
+
+/*social*/
+span.social + div p {padding: 10px 0 0;}
+
+/*footer nav*/
+.templateOne section + .wrapper { margin-bottom:0px; padding-bottom: 95px;}
+
+
+/* Mobile Main Nav
+----------------------------------------------- */
+
+.row.address .full {
+	padding:5px 0px;
+	
+}
+
+.row.address, .row.address a{
+	font-size:10px;
+}
+
+
+/* TemplateThree
+----------------------------------------------- */
+.templateThree aside img{display:none;}
+
+
+
+
+/* TemplateFour
+----------------------------------------------- */
+
+.templateFour .row .third, 
+.templateFive .row .third, 
+.templateFour .row .third:last-of-type, 
+.templateFive .row .third:last-of-type, 
+.templateFour .row:last-of-type .third, 
+.templateFive .row:last-of-type .third{
+	border:none;
+	padding:10px;
+}
+
+.templateFour .row .third, 
+.templateFive .row .third, 
+.templateFour .row .third:last-of-type, 
+.templateFive .row .third:last-of-type, 
+.templateFour .row:last-of-type .third, 
+.templateFive .row:last-of-type .third{ 
+	border: 1px solid rgba(134, 134, 134, 0.15);
+}
+
+/* TemplateSix
+----------------------------------------------- */
+.templateSix section {
+    padding-left: 0px;
+}
+
+
+/* TemplateEight
+----------------------------------------------- */
+
+.templateEight .three-fourth{
+	padding-bottom:40px;
+}
+
+.templateEight header + .wrapper input {
+    margin-right: 0;
+    width: 100%;
+}
+
+
+
+/* Type
+----------------------------------------------- */
+/* Desktop Main Nav
+----------------------------------------------- */
+
+/* Side Nav
+----------------------------------------------- */
+/* Footer.main & Contact Page Elements
+----------------------------------------------- */
+/* Styles
+----------------------------------------------- */
+
+/* TemplateTwo
+----------------------------------------------- */
+
+/* TemplateFive
+----------------------------------------------- */
+
+/* TemplateSeven
+----------------------------------------------- */
+
+
+}
+
+
+
+
+/*iphone landscape*/
+@media all and (max-width: 568px) {
+
+/* Grid
+----------------------------------------------- */
+
+
+.half, .third, .fourth, 
+.wrapper.main .full, 
+.wrapper.main .half, 
+.wrapper.main .third, 
+.wrapper.main.fourth, 
+.templateOne div.wrapper + section .fourth, 
+.templateOne div.wrapper + section { width:100%; }
+
+
+/* Mobile Main Nav
+----------------------------------------------- */
+footer.mobile ul#nav li{
+	padding:0px 0px;
+}
+
+
+
+footer.mobile .row.address{
+	display:none;
+}
+
+
+
+/* Template Four
+----------------------------------------------- */
+
+.templateFour .row .third, .templateFive .row .third, .templateFour .row .third:last-of-type, .templateFive .row .third:last-of-type, .templateFour .row:last-of-type .third, .templateFive .row:last-of-type .third{
+	border:none;
+	border-bottom:1px solid rgba(134, 134, 134, 0.15);
+}
+
+/* Template Eight
+----------------------------------------------- */
+
+.templateEight .wrapper.main input {
+    margin-right: 0;
+    width: 100%;
+}
+
+.templateEight .wrapper.main{
+	border-width:10px;
+}
+
+
+
+
+
+
+/* Type
+----------------------------------------------- */
+/* Header
+----------------------------------------------- */
+/* Desktop Main Nav
+----------------------------------------------- */
+/* Mobile Main Nav
+----------------------------------------------- */
+/* Main Content
+----------------------------------------------- */
+/* Side Nav
+----------------------------------------------- */
+/* Footer.main & Contact Page Elements
+----------------------------------------------- */
+/* Styles
+----------------------------------------------- */
+/* Hide Elements
+----------------------------------------------- */
+/* Show Elements
+----------------------------------------------- */
+/* Template One
+----------------------------------------------- */
+/* Template Two
+----------------------------------------------- */
+/* Template Three
+----------------------------------------------- */
+
+/* Template Five
+----------------------------------------------- */
+/* Template Six
+----------------------------------------------- */
+/* Template Seven
+----------------------------------------------- */
+
+}
+
+
+/*iphone portrait*/
+@media all
+and (max-width : 320px) 
+{ 
+
+/* Mobile Main Nav
+----------------------------------------------- */
+
+footer.mobile ul#nav li{
+	padding:20px 0px;
+}
+
+footer.mobile .row.address{
+	display:block;	
+}
+
+
+
+
+
+/* Grid
+----------------------------------------------- */
+/* Type
+----------------------------------------------- */
+/* Header
+----------------------------------------------- */
+/* Desktop Main Nav
+----------------------------------------------- */
+/* Mobile Main Nav
+----------------------------------------------- */
+/* Main Content
+----------------------------------------------- */
+/* Side Nav
+----------------------------------------------- */
+/* Footer.main & Contact Page Elements
+----------------------------------------------- */
+/* Styles
+----------------------------------------------- */
+/* Hide Elements
+----------------------------------------------- */
+/* Show Elements
+----------------------------------------------- */
+/* Template One
+----------------------------------------------- */
+/* Template Two
+----------------------------------------------- */
+/* Template Three
+----------------------------------------------- */
+/* Template Four
+----------------------------------------------- */
+/* Template Five
+----------------------------------------------- */
+/* Template Six
+----------------------------------------------- */
+/* Template Seven
+----------------------------------------------- */
+/* Template Eight
+----------------------------------------------- */
+
+
+
+}
+
+

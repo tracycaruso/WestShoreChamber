@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*make wrapper a fixed width*/
+header, .wrapper, .templateOne div.wrapper + section, figure, picture img, footer{
+	width:1000px!important;
+	margin:0 auto;
+}
+
+/*resize logo*/
+h1.logo {background: url('../img/wschamber-logo-sm.png');}
+
+
+/*replace vector background*/
+footer.main, footer.main .wrapper{background-color:#00387D;}
+footer.main{padding-top:25px;}
+
+/*hide icons*/
+
+ul li:before{content:' '!important;}
+footer.main ul.contact li:before, .templateOne .wrapper section ul li:before, .contact-side ul li:before{content:' '!important;}
+	
+
+/*adjust homepage buttons*/	
+.templateOne .links{width:505px;}
+.templateOne .links .styleTwo{width:250px;}
+
+
+/*replace border image */
+
+.templateSeven section .full, .templateEight .wrapper.main{ 
+	border-bottom: 30px solid #36626D;
+	border-top: 30px solid #36626D;
+	border-left: 30px solid #36626D;
+	border-right: 30px solid #36626D; 
+	border-image:none;
+	margin-bottom:5px;
+	}
+
+
